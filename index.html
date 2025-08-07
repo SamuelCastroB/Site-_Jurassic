@@ -6,31 +6,82 @@
     <title>Meu Site Moderno</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: Arial, sans-serif; /* Usando fonte padrão do sistema */
             margin: 0;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            background-color: #282c34; /* Fundo colorido */
-            color: #61dafb; /* Cor do texto */
+            background-color: #f0f2f5; /* Cor suave de fundo */
+            color: #333;
             text-align: center;
+            line-height: 1.6;
         }
+
+        .container {
+            max-width: 900px;
+            padding: 20px;
+            margin: 0 auto;
+        }
+
         h1 {
-            font-size: 3em;
-            margin-bottom: 0.5em;
+            font-size: 3.5em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-weight: 700;
         }
-        p {
-            font-size: 1.2em;
-            max-width: 800px;
-            line-height: 1.5;
+
+        h2 {
+            font-size: 1.8em;
+            color: #7f8c8d;
+            margin-top: 0;
+            font-weight: 300;
+        }
+
+        .content-block {
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+        }
+
+        .content-block p {
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            .content-block {
+                padding: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2em;
+            }
+            h2 {
+                font-size: 1.2em;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>Bem-vindo ao Meu Site</h1>
-    <p>Este é um subtítulo simples e moderno, criado automaticamente com Manus.</p>
+    <div class="container">
+        <h1>Meu Novo Site</h1>
+        <h2>Um lugar para ideias modernas e limpas</h2>
+        <div class="content-block">
+            <p>Site atualizado automaticamente com Manus</p>
+        </div>
+    </div>
 </body>
 </html>
 
